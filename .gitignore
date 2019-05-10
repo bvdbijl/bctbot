@@ -1,0 +1,9 @@
+venv
+.idea/
+log/
+__pycache__/
+.vscode/
+tests/
+
+api_credentials.py*
+todo.txt
