@@ -10,7 +10,7 @@
             "ADB/ETH": {
                 "strategies": {
                     "range_account_building_1": {
-                        "total_buy_cost": 0.3,
+                        "total_buy_cost": 1.5,
                         "buy_price_1": 0.000005,
                         "buy_price_2": 0.0000048,
                         "buy_price_3": 0.0000046,
@@ -24,21 +24,6 @@
                         "sell_amount_percentage_2": 0.25,
                         "sell_amount_percentage_3": 0.25
                     },
-                    "range_account_building_2": {
-                        "total_buy_cost": 0.5,
-                        "buy_price_1": 0.0000064,
-                        "buy_price_2": 0.0000054,
-                        "buy_price_3": 0.0000044,
-                        "buy_price_4": 0.0000034,
-                        "buy_amount_percentage_1": 0.1,
-                        "buy_amount_percentage_2": 0.15,
-                        "buy_amount_percentage_3": 0.2,
-                        "buy_amount_percentage_4": 0.55,
-                        "sell_price_1": 0.0000084,
-                        "sell_price_2": 0.0000092,
-                        "sell_amount_percentage_1": 0.75,
-                        "sell_amount_percentage_2": 0.25
-                    }
                 }
             }
         }
