@@ -1,8 +1,8 @@
 import sys
 import argparse
-from bctbot.tradingbot import TradingBot
+from tradingbot import TradingBot
 
-import bctbot.logging_setup as log_setup
+import logging_setup as log_setup
 logger = log_setup.logging.getLogger(__name__)
 
 
@@ -16,9 +16,10 @@ def main():
     parser = parse_args(sys.argv[1:])
     t = TradingBot()
     bot_config = parser.config if parser.config else "trading_bot_config.json"
+    logger.info(f"Loding config from: {bot_config}")
     t.load_session(bot_config)
-    while t.active:
-        t.loop()
+#     while t.active:
+#         t.loop()
 
 
 if __name__ == "__main__":

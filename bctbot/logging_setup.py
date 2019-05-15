@@ -76,7 +76,7 @@ LOGGING_CONFIG = {
         },
         'ccxt': {
             'handlers': ['debug_log', 'info_log', 'error_log', 'log_console'],
-            'level': 'DEBUG',
+            'level': 'INFO',
         }
     }
 }
