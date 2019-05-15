@@ -2,27 +2,111 @@
     "kucoin": {
         "ccxt_config": {
             "apiKey": "<YOUR_API_KEY_HERE>",
-            "secret": "<YOUR_API_SECRET_HERE>",
             "enableRateLimit": true,
+            "secret": "<YOUR_API_SECRET_HERE>",
             "verbose": false
         },
         "traded_markets": {
             "ADB/ETH": {
+                "active": true,
+                "balances": {
+                    "$collections.deque": []
+                },
+                "prices": {
+                    "$collections.deque": []
+                },
                 "strategies": {
                     "range_account_building_1": {
-                        "total_buy_cost": 1.5,
-                        "buy_price_1": 0.000005,
-                        "buy_price_2": 0.0000048,
-                        "buy_price_3": 0.0000046,
+                        "amount_to_sell": 0,
+                        "bought_counter": 0,
                         "buy_amount_percentage_1": 0.34,
                         "buy_amount_percentage_2": 0.33,
                         "buy_amount_percentage_3": 0.33,
-                        "sell_price_1": 0.0000055,
-                        "sell_price_2": 0.0000057,
-                        "sell_price_3": 0.000006,
+                        "buy_price_1": 5e-06,
+                        "buy_price_2": 4.8e-06,
+                        "buy_price_3": 4.6e-06,
+                        "orders": {
+                            "buy_order_1": {
+                                "cost": 0.51,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.51,
+                                "internal_id": "buy_order_1",
+                                "market": "ADB/ETH",
+                                "price": 5e-06,
+                                "side": "buy",
+                                "status": "potential",
+                                "type": "limit"
+                            },
+                            "buy_order_2": {
+                                "cost": 0.495,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.495,
+                                "internal_id": "buy_order_2",
+                                "market": "ADB/ETH",
+                                "price": 4.8e-06,
+                                "side": "buy",
+                                "status": "potential",
+                                "type": "limit"
+                            },
+                            "buy_order_3": {
+                                "cost": 0.495,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.495,
+                                "internal_id": "buy_order_3",
+                                "market": "ADB/ETH",
+                                "price": 4.6e-06,
+                                "side": "buy",
+                                "status": "potential",
+                                "type": "limit"
+                            },
+                            "sell_order_1": {
+                                "cost": 0.75,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.75,
+                                "internal_id": "sell_order_1",
+                                "market": "ADB/ETH",
+                                "price": 5.5e-06,
+                                "side": "sell",
+                                "status": "potential",
+                                "type": "limit"
+                            },
+                            "sell_order_2": {
+                                "cost": 0.375,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.375,
+                                "internal_id": "sell_order_2",
+                                "market": "ADB/ETH",
+                                "price": 5.7e-06,
+                                "side": "sell",
+                                "status": "potential",
+                                "type": "limit"
+                            },
+                            "sell_order_3": {
+                                "cost": 0.375,
+                                "exchange": "kucoin",
+                                "id": null,
+                                "initial_cost": 0.375,
+                                "internal_id": "sell_order_3",
+                                "market": "ADB/ETH",
+                                "price": 6e-06,
+                                "side": "sell",
+                                "status": "potential",
+                                "type": "limit"
+                            }
+                        },
                         "sell_amount_percentage_1": 0.5,
                         "sell_amount_percentage_2": 0.25,
-                        "sell_amount_percentage_3": 0.25
+                        "sell_amount_percentage_3": 0.25,
+                        "sell_price_1": 5.5e-06,
+                        "sell_price_2": 5.7e-06,
+                        "sell_price_3": 6e-06,
+                        "state": "idle",
+                        "total_buy_cost": 1.5
                     }
                 }
             }

@@ -18,8 +18,8 @@ def main():
     bot_config = parser.config if parser.config else "trading_bot_config.json"
     logger.info(f"Loding config from: {bot_config}")
     t.load_session(bot_config)
-#     while t.active:
-#         t.loop()
+    while t.active:
+        t.loop()
 
 
 if __name__ == "__main__":

@@ -18,7 +18,9 @@ Bittersweet Crypto Trading Bot is a semi-automatic trading bot for cryptocurrenc
 ## How to use
 
 * First `copy` or `clone` the repository.
+* Navigate to the folder and install the necessary packages `pip install -r requirements.txt`
 * Configure your `bot_settings.json` file.
+* Change directories into bctbot `cd bctbot`
 * Run the bot with `python run_bot.py --config bot_settings.json`.
 
 ### Prerequisites
@@ -41,6 +43,7 @@ You can add other [options](https://github.com/ccxt/ccxt/wiki/Manual#exchange-pr
             "ccxt_config": {
                 "apiKey": "<YOUR_API_KEY_HERE>",
                 "secret": "<YOUR_API_SECRET_HERE>",
+                //"password": "<Some exchanges require an additional password>"
                 "enableRateLimit": true,
                 "verbose": false
             },
