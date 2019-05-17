@@ -13,7 +13,7 @@ class TradingBot:
         logger.info(f"Initializing Tradingbot with the following settings: {bot_settings}")
         self.config_file_path = "trading_bot_config.json"
         self.cycles = 0
-        self.LOOP_SLEEP = 2
+        self.LOOP_SLEEP = 10
         self.active = True
         self.bot_settings = {} if bot_settings is None else bot_settings
         self.exchanges = self.load_exchanges()
